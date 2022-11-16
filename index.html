@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
     <title>The Basic Language of the Web: HTML</title>
   </head>
   <body>
@@ -13,7 +14,7 @@
     <h5>The Basic Language of the Web: HTML</h5>
     <h6>The Basic Language of the Web: HTML</h6>
     -->
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
 
       <nav>
@@ -34,7 +35,9 @@
           width="50"
           height="50"
         />
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
 
         <img
           src="./assets/images/post-img.jpg"
@@ -56,7 +59,7 @@
 
       <h3>What is HTML?</h3>
       <p>
-        HTML stands for <string>H</string>yper<strong>T</strong>ext
+        HTML stands for <strong>H</strong>yper<strong>T</strong>ext
         <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
         language that we developers use to structure and describe the content of
         a webpage (not a programming language).
@@ -115,7 +118,7 @@
             height="75"
           />
           <a href="#">How to Learn Web Development</a>
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
         </li>
         <li>
           <img
@@ -125,7 +128,7 @@
             height="75"
           />
           <a href="#">The Unknow Power of CSS</a>
-          <p>By Jim Dillon</p>
+          <p class="related-author">By Jim Dillon</p>
         </li>
         <li>
           <img
@@ -135,11 +138,13 @@
             height="75"
           />
           <a href="#">Why JavaScript is Awesome</a>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
 
-    <footer>Copyright &copy; 2027 The Code Magazine</footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2027 The Code Magazine</p>
+    </footer>
   </body>
 </html>
